@@ -8,10 +8,10 @@
 
 #include <cstdint>
 
-typedef struct message_std0 {
+typedef struct __attribute__ ((__packed__)) message_std0 {
     uint8_t id;
     uint8_t *data;
-}message_std;
+} message_std;
 
 
 #endif //GUNMQ_MESSAGE_STD_HH
